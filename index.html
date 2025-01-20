@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Noro - Freelance Programmer & Ethical Hacker">
+    <meta name="keywords" content="freelancer, programming, ethical hacking, portfolio, Noro">
+    <meta name="author" content="Noro">
     <title>Noro - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -16,6 +20,9 @@
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
         }
         nav {
             display: flex;
@@ -54,7 +61,31 @@
             text-decoration: none;
             border-radius: 4px;
         }
+    
+        /* Fix for aligning Skills section */
+        #skills h2 {
+            margin-bottom: 1rem; /* Adds space below the heading */
+        }
+    
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0; /* Remove default margin */
+            display: inline-block; /* Align list with the heading */
+            text-align: left; /* Align text to the left */
+        }
+    
+        #skills li {
+            margin-bottom: 0.5rem; /* Adds space between list items */
+        }
+    
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
     </style>
+    
 </head>
 <body>
     <header>
@@ -69,6 +100,12 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <section id="hero" style="background: #333; color: white; padding: 50px 0; text-align: center;">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Your solution to high-quality code and ethical hacking projects</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
     <section id="about">
         <h2>About Me</h2>
         <p>Hi, I'm Noro, a passionate programmer and ethical hacker. I'm dedicated to delivering high-quality solutions for my clients.</p>
@@ -78,12 +115,12 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>Project 1</h3>
-            <p>A psuedo Genshin Survey</p>
+            <p>A pseudo Genshin Survey</p>
             <a href="https://noro-void.github.io/Genshin-psuedo-Survey/" target="_blank" class="btn">View Project</a>
         </div>
         <div class="project">
             <h3>Project 2</h3>
-            <p>A basic To do list app (<a href="https://github.com/Noro-void/ToDoListApp" target="_blank">--Github Link </a>)</p>
+            <p>A basic To-do list app (<a href="https://github.com/Noro-void/ToDoListApp" target="_blank">GitHub Link</a>)</p>
             <a href="https://todolistapp-ikda.onrender.com/" target="_blank" class="btn">View Project</a>
         </div>
     </section>
